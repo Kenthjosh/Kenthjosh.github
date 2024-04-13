@@ -1,0 +1,111 @@
+body, html{
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url("Images/mobile-legends.jpg");
+    min-height: 99%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: moveBackground 8s linear infinite;
+    background-size: 105% auto; 
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+        background-position: 0 50%; /* End position */
+    }
+}
+
+.MT-text {
+    text-align: center;
+    margin: 24px 0px 12px 0px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha (fourth) value to set the transparency level */ 
+    width: 30%;
+    border-radius: 20px;
+}
+
+.img-container {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+}
+
+form {
+    border: solid black 3px;
+    box-sizing: 100px;
+    animation: lightWaves 2s linear infinite;
+}
+
+@keyframes lightWaves {
+    0% {
+        border-color: red; /* Red */
+    }
+    25%{
+        border-color: green;
+    }
+    50%{
+        border-color: blue;
+    }
+    75%{
+        border-color: yellow;
+    }
+    100%{
+        border-color: magenta;
+    }
+}
+
+.button{
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+img {
+    width: 40%;
+    border-radius: 50%;
+    border: solid black
+}
